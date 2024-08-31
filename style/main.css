@@ -1,0 +1,143 @@
+@import url(./reset.css);
+
+@font-face {
+    font-family: "roboto";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+:root {
+    --color1: rgba(83, 38, 212, 1);
+    --color2: rgba(255, 255, 255, 1);
+    --color3: rgba(65, 68, 191, 1);
+    --color4: rgba(222, 230, 243, 1);
+    --font1: "roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font1);
+}
+
+/*HEADER____________________________________________________*/
+
+.header {}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 680px;
+    /*потом удалить*/
+    background-image: url(../img/header_background.png);
+    background-size: cover;
+    padding: 21px 42px;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 106px;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 41px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color1);
+    letter-spacing: 2px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.header_nav a:hover {
+    color: var(--color2);
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.header_logo {
+    width: 324px;
+}
+
+
+.header_basket.header_svg:hover {
+    fill: var(--color2);
+    transition: 0.2s;
+}
+
+.header_basket a:nth-child(2) {
+    margin-left: 20px;
+}
+
+.header_img {
+    width: 30px;
+    height: 30px;
+}
+
+.header_info {
+    color: var(--color2);
+    text-align: center;
+
+}
+
+.header_info h1 {
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 4px;
+    margin-bottom: 21px;
+}
+
+.header_info p {
+    font-size: 29px;
+    line-height: 41px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 33px;
+}
+
+
+.header_info a {
+    color: var(--color3);
+    border: 3px solid var(--color3);
+    border-radius: 50px;
+    background: var(--color2);
+    text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+    padding: 13px 35px;
+}
+
+.header_info a:hover{
+    opacity: 0.8;
+}
+/*PARTNERS____________________________________________________*/
+
+.partners_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 27px 115px;
+    background: var(--color4);
+
+}
+
+.partners_inner img {
+    align-self: center;
+
+}
+
+.partners_inner p{
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 2px;
+}
+
+/*PARTNERS____________________________________________________*/

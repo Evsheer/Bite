@@ -10,6 +10,8 @@
     --color2: rgba(255, 255, 255, 1);
     --color3: rgba(65, 68, 191, 1);
     --color4: rgba(222, 230, 243, 1);
+    --color5: rgba(23, 35, 69, 1);
+    --color6: rgba(0, 0, 0, 0.4);
     --font1: "roboto", sans-serif;
 }
 
@@ -108,9 +110,10 @@ body {
     padding: 13px 35px;
 }
 
-.header_info a:hover{
+.header_info a:hover {
     opacity: 0.8;
 }
+
 /*PARTNERS____________________________________________________*/
 
 .partners_container {
@@ -133,11 +136,117 @@ body {
 
 }
 
-.partners_inner p{
+.partners_inner p {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 17px;
     letter-spacing: 2px;
 }
 
-/*PARTNERS____________________________________________________*/
+/*MAKE____________________________________________________*/
+
+.make {}
+
+.make_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 31px 0px 23px;
+    color: var(--color5);
+}
+
+.make_container p {
+    font-size: 24px;
+    line-height: 39px;
+    letter-spacing: 1px;
+}
+
+.make_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 6px;
+    margin-bottom: 23px;
+}
+
+.make_inner p {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*INFO____________________________________________________*/
+
+.info {}
+
+.info_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0;
+}
+
+.info_inner {
+    display: flex;
+    gap: 20px;
+}
+
+.info_text {
+    width: 200px;
+    height: 340px;
+    padding-top: 133px;
+    text-align: center;
+}
+
+.info_text p {
+    margin-bottom: 22px;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+.info_text button {
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 3px solid var(--color3);
+    font-size: 19px;
+    line-height: 31px;
+    color: var(--color3);
+}
+
+.info_text button:hover {
+   background: var(--color6);
+   color: var(--color2);
+   border: 3px solid var(--color6);
+   transition: 0.2s;
+}
+
+.info_card {
+    width: 350px;
+    height: 455px;
+    padding-top: 358px;
+    text-align: center;
+}
+
+.info_card.info_shadow {
+    background-color: var(--color6);
+}
+
+
+.info_color1 {
+    background-image: url(../img/info_img1.png);
+    background-repeat: no-repeat;
+}
+
+.info_color2 {
+    background-image: url(../img/info_img2.png);
+    background-repeat: no-repeat;
+}
+
+.info_color3 {
+    background-image: url(../img/info_img3.png);
+    background-repeat: no-repeat;
+}

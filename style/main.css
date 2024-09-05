@@ -19,6 +19,9 @@
     --color11: rgba(0, 56, 210, 1);
     --color12: rgba(170, 170, 170, 1);
     --color13: rgba(253, 248, 245, 1);
+    --color14: rgba(0, 0, 0, 0.5);
+    --color15: rgba(65, 82, 134, 1);
+    --color16: rgba(108, 119, 181, 1);
     --font1: "roboto", sans-serif;
 }
 
@@ -770,7 +773,7 @@ body {
     background-color: var(--color3);
 }
 
-.get_info button:hover{
+.get_info button:hover {
     color: var(--color2);
     background: var(--color6);
     border: 3px solid var(--color6);
@@ -786,15 +789,12 @@ body {
     text-transform: uppercase;
 }
 
-.get_vector {
-  
-}
+.get_vector {}
 
 .get_cards {
     display: flex;
     justify-content: center;
     background-color: var(--color13);
-    /* margin-bottom: 52px; */
 }
 
 .get_card {
@@ -802,11 +802,11 @@ body {
     text-align: center;
 }
 
-.get_card img{
+.get_card img {
     margin-bottom: 11px;
 }
 
-.get_card h3{
+.get_card h3 {
     font-size: 23px;
     line-height: 26px;
     color: var(--color5);
@@ -819,4 +819,197 @@ body {
     font-size: 11px;
     line-height: 24px;
     color: var(--color5);
+}
+
+/*ONE____________________________________________________*/
+
+.one_flex {
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color13);
+}
+
+.one_title {
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    line-height: 109px;
+    letter-spacing: 5px;
+    color: var(--color5);
+
+}
+
+.one_text {
+    max-width: 676px;
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: var(--color5);
+}
+
+
+.one_flex a {
+    font-size: 24px;
+    line-height: 40px;
+    color: var(--color3);
+    margin-bottom: 38px;
+}
+
+/*MAKE____________________________________________________*/
+
+.wish {
+    margin-bottom: 121px;
+}
+
+.wish_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 69px;
+    padding-left: 202px;
+}
+
+.wish_inner {
+    display: flex;
+    align-items: center;
+}
+
+.wish_block1 {
+    padding: 52px;
+}
+
+.wish_block1_title {
+    font-size: 56px;
+    line-height: 52px;
+    letter-spacing: 3px;
+    color: var(--color5);
+    width: 408px;
+    margin-bottom: 19px;
+}
+
+.wish_block1_text {
+    font-size: 24px;
+    line-height: 49px;
+    letter-spacing: 1px;
+    color: var(--color5);
+    margin-bottom: 31px;
+    width: 455px;
+}
+
+.wish_block1 a {
+    font-size: 22px;
+    line-height: 39px;
+    color: var(--color11);
+}
+
+.wish_circuit_wrapper{
+    width: 50px;
+    height: 50px;
+}
+.wish_circuit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color14);
+}
+
+.wish_circuit:hover{
+    background: var(--color4);
+    transition: 0.2s;
+}
+
+.wish_block2 {
+    text-align: center;
+    margin: 88px 68px 0px 88px;
+ 
+}
+
+.wish_block2_title {
+    width: 300px;
+    font-size: 15px;
+    line-height: 33px;
+    color: var(--color15);
+
+}
+
+.wish_block2_text {
+    width: 298px;
+    font-size: 21px;
+    line-height: 33px;
+    color: var(--color15);
+    margin-bottom: 38px;
+}
+
+.wish_block2 h5{
+font-size: 12px;
+line-height: 21px;
+color: var(--color8);
+text-transform: uppercase;
+}
+
+/*FOOTER____________________________________________________*/
+footer {
+
+}
+
+footer a:hover{
+ text-decoration: underline;
+}
+
+footer a{
+    color: var(--color16);
+}
+
+.footer_logo{
+    margin-bottom: 21px;
+}
+
+.footer_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 104px  165px;
+    background: var(--color13);
+}
+.footer_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 66px;;
+}
+.footer_block {
+    width: 255px;
+}
+
+.footer_block p{
+    margin-bottom: 10px;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_checkout{
+    display: flex;
+    gap: 5px;
+}
+
+.footer_copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 31px 0px 67px;
+
+}
+.footer_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
 }
